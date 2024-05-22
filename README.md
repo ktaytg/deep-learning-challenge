@@ -20,7 +20,9 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
   hidden_nodes_layer1 = 80
   hidden_nodes_layer2 = 30
 
-This model achieved an accuracy score of 72.87%
+  I tried the same model with switching all but the first layer to sigmoid activation functions, accuracy inceased as 73.33%.
+
+Tried below model achieved an accuracy score of 72.87%
 hidden_nodes_layer1 = 80
 hidden_nodes_layer2 = 10
   
@@ -31,13 +33,19 @@ hidden_nodes_layer2 = 25
 hidden_nodes_layer3 = 5
 
 
+I switched all but the first layer to sigmoid activation functions.Removed the third layer, increase the first layer to 130 and 2nd layer to 50. This model achieved an accuracy score of 73.39%
+hidden_nodes_layer1 = 130
+hidden_nodes_layer2 = 50
 
-In my final model, I wanted to keep 4 layers but test with less nodes to see if the data might be overfit. I tried 60, 30, 15, 5. This model achieved a 72.94% accuracy rate.
+I tried to add a layer as below but accuracy score was 73.35% which is lower than previous version
+hidden_nodes_layer1 = 130
+hidden_nodes_layer2 = 50
+hidden_nodes_layer3 = 10
 
 * Were you able to achieve the target model performance?
-In the end, I was not able to achieve the target model performance. The closest I got was in my second optimization model with a rate of 73.14%.
+In the end, I was not able to achieve the target model performance. The closest I got was in my second optimization model with a rate of 73.39%.
 
 ## Summary
-Overall, the most efficient model that I created was had an accuracy of . 
+Overall, the most efficient model that I created was had an accuracy of 73.39%. 
 This did not achieve the target model performance of 75% and would therefore mean that this model is not yet ready to be utilized as a trustworthy tool for this company.
-To increase the effectiveness of our model, many methods could be tried. I would recommend combing through the data in the preprocessing stage and removing more categories that may be too niche to generalize like "SPECIAL_CONSIDERATIONS". 
+To increase the effectiveness of our model, we may try removing more categories that may be too niche to generalize like "SPECIAL_CONSIDERATIONS" and we can always increase the data.
